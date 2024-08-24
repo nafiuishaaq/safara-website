@@ -2,6 +2,18 @@
 Custom Css
 */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   overflow-x: hidden;
+}
+
+.about {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  padding: 100px;
 }
