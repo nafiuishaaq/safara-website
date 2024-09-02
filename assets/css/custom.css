@@ -1,6 +1,11 @@
 /*
 Custom Css
 */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Dela+Gothic+One&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 * {
   margin: 0;
@@ -13,14 +18,14 @@ body {
   font-family: "Open Sans";
 }
 
-.nav{
- padding: 10px !important;
+.nav {
+  padding: 10px !important;
 }
 
 .about {
   background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: multiply;
-  padding: 100px;
+  padding: 60px;
 }
 
 .custom-section {
@@ -112,6 +117,18 @@ body {
 .slider-item {
   min-width: 33.33%;
   flex: 0 0 33.33%;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-family: "Manrope", sans-serif;
+}
+
+.brand {
+  font-family: "Dela Gothic One", sans-serif;
 }
 
 @keyframes slide {
