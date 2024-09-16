@@ -105,14 +105,14 @@ body {
 
 .slider {
   display: flex;
-  animation: slide 15s steps(3) infinite;
+  animation: slide 15s steps(1) infinite;
 }
 
-.slider img {
+/* .slider img {
   width: 100%;
   height: 300px;
   object-fit: cover;
-}
+} */
 
 .slider-item {
   min-width: 33.33%;
