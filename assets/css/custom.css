@@ -115,8 +115,8 @@ body {
 } */
 
 .slider-item {
-  min-width: 33.33%;
-  flex: 0 0 33.33%;
+  min-width: 50%;
+  flex: 0 0 50%;
 }
 
 p {
