@@ -22,6 +22,18 @@ body {
   padding: 10px !important;
 }
 
+.navbar-toggler {
+  border: none !important; /* Remove the border */
+  outline: none !important; /* Remove the outline */
+  box-shadow: none !important; /* Remove box shadow if any */
+}
+
+/* Ensure the focus state does not apply outline or shadow */
+.navbar-toggler-custom:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .about {
   background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: multiply;
@@ -170,7 +182,7 @@ h1 {
 }
 
 /* Dark overlay for the slider */
-.carousel-item::before {
+#demo .carousel-item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -219,6 +231,10 @@ h1 {
   width: 100%;
 }
 
+#side .carousel-item img {
+  height: 300px;
+  min-height: 300px;
+}
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .carousel-caption {
