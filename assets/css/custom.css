@@ -168,3 +168,79 @@ h1 {
     transform: translateX(0);
   }
 }
+
+/* Dark overlay for the slider */
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the darkness by changing the opacity */
+  z-index: 1;
+}
+
+/* Custom CSS for text overlay */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 10%; /* Distance from the left */
+  transform: translateY(-50%);
+  z-index: 2; /* Higher than the overlay */
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  text-align: left;
+  max-width: 50%; /* Adjust text block width if necessary */
+}
+
+.carousel-caption h1 {
+  font-size: 3rem; /* Default for larger screens */
+}
+
+.carousel-caption p {
+  font-size: 1.25rem; /* Default for larger screens */
+}
+
+/* Make the slider take up full height of the viewport */
+.carousel-item {
+  height: 280%;
+  min-height: 280%;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .carousel-caption {
+    left: 5%; /* Reduce left padding on smaller screens */
+    max-width: 90%; /* Allow more space on smaller screens */
+  }
+
+  .carousel-caption h1 {
+    font-size: 2rem; /* Smaller font size for smaller screens */
+  }
+
+  .carousel-caption p {
+    font-size: 1rem; /* Smaller paragraph text */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption h1 {
+    font-size: 1.5rem; /* Even smaller for extra small screens */
+  }
+
+  .carousel-caption p {
+    font-size: 0.875rem; /* Make the paragraph text smaller */
+  }
+}
